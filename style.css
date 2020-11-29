@@ -1,0 +1,54 @@
+.main {
+  width          : 100vw;
+  height         : 100vh;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  background     : url(./image/water_and_fire.jpg);
+  color          : white;
+  flex-direction : column;
+}
+
+
+.calculator {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: space-between;
+  height         : 100px;
+}
+
+.input__area {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.container__input {
+  display       : flex;
+  flex          : 2;
+  flex-direction: column;
+}
+
+.input_result {
+  flex: 1;
+}
+
+.input__header {}
+
+.input__value {
+  width: 90%;
+}
+
+.container__button {}
+
+.button {
+  background-color: snow;
+  width: 50px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button:focus {
+  background-color: silver;
+}

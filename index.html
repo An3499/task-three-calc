@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1>Calculator</h1>
+        <form class="calculator">
+
+            <div class="input__area">
+                <div class="container__input">
+                    <label for="value-a" class="input__header">Value A</label>
+                    <input id="value-a" placeholder="Value A" type="number" class="input__value" required>
+                </div>
+
+                <div class="container__input">
+                    <label for="value-b" class="input__header">Value B</label>
+                    <input id="value-b" type="number" placeholder="Value B" class="input__value" required>
+                </div>
+
+                <div class="container__input input_result">
+                    <label for="result" class="input__header">Result</label>
+                    <input  id="result" type="text" placeholder="Result" class="input__value" disabled>
+                </div>
+            </div>
+
+            <div class="container__button">
+                <button type="submit" class="button button_plus" data-action="plus">+</button>
+                <button type="submit" class="button buttom_minus" data-action="minus">-</button>
+                <button type="submit" class="button button_multiply" data-action="multiply">*</button>
+                <button type="submit" class="button button_division" data-action="division">/</button>
+                <button type="submit" class="button button_remainder-of-division" data-action="remainder-of-division">%</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
