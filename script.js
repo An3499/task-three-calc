@@ -21,13 +21,15 @@ function calculateRemainderOfDivision() {
     result.value = parseFloat(valueA.value) % parseFloat(valueB.value)
 }
 
+let submitter = {}
+calculator.addEventListener("click", (event) => {
+    submitter = event.target
+})
 
 calculator.addEventListener("submit", (event) => {
     event.preventDefault()
 
-    console.log(event);
-
-    switch (event.submitter.dataset.action) {
+    switch (submitter.dataset.action) {
         case "plus" : return calculatePlus()
         case "minus" : return calculateMinus()
         case "multiply" : return calculateMultiply()
